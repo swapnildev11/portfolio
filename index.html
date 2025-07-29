@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+
+        box-sizing: border-box;
+        background: black;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        margin-top: 0px;
+        padding: 0px;
+        background:black;
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+
+
+    }
+
+    .name {
+        font-size: 200%;
+        color: white;
+        margin-top: 25px;
+    }
+
+    .header-option {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-option>a:hover {
+        color: #9b9684;
+
+    }
+
+    .header-option>.headernames {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        transition: 1s;
+        font-weight: 700;
+        justify-content: space-evenly;
+    }
+
+    .header-option>.headernames:hover {
+        border: 2px solid white;
+        border-radius: 10px;
+        transition: 1s;
+        color: #ffc107;
+        padding: 5px;
+    }
+
+    .hireme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hireme>a>button {
+        background: none;
+        color: white;
+        border: 1px white solid;
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .hireme>a>button:hover {
+        background: white;
+        color: black;
+        font-size: 15px;
+       
+    }
+
+    .middle {
+
+        text-align: center;
+        width: 100%;
+
+
+    }
+
+    .middle>.iam {
+        color: white;
+        font-size: 25px;
+    }
+
+    .mybig-name>label {
+        color: #ffc107;
+        font-weight: 700;
+        font-size: 500%;
+    }
+
+    .myimage {
+        height: 300px;
+        width: 250px;
+        border-radius: 20%;
+        border: 4px solid white;
+
+
+    }
+
+    .myimage:hover {
+        border: 4px solid #ffc107;
+        transition: 1s;
+
+    }
+
+    @media (max-width: 450px) and(min-width:700px) {
+
+        .mybig-name>label {
+            color: #ffc107;
+            font-weight: 700;
+            font-size: 150px;
+        }
+
+        .name {
+            font-size: 300%;
+            color: white;
+            margin-top: 11px;
+            margin-top: 10px;
+        }
+
+        .hireme>a>button {
+            background: none;
+            color: white;
+            border: 1px white solid;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .hireme>a>button:hover {
+            background: white;
+            color: black;
+
+            font-size: 15px;
+            width: 100px;
+
+        }
+
+        .header-option>a>.headernames {
+            color: white;
+            font-size: 30px;
+            display: flex;
+            font-weight: 700;
+            justify-content: space-evenly;
+        }
+        .header-option>.headernames:hover {
+        border: 2px solid white;
+        border-radius: 10px;
+        transition: 1s;
+        font-size: 25px;
+        color: #ffc107;
+        padding: 7px;
+    }
+    }
+
+    .middle>.iam {
+        color: white;
+        font-size: 40px;
+    }
+
+    .headernames {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        font-weight: 700;
+        justify-content: space-evenly;
+    }
+
+    .aboutme {
+        text-align: center;
+    }
+
+    .h1 {
+        color: #ffc107;
+        font-size: 23px;
+    }
+
+    .h2 {
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .twopara {
+
+        align-items: flex-start;
+
+    }
+
+    .twopara>.para1>.one {
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .twopara .para1 .one .myname {
+        font-size: 50px;
+        color: #ffc107;
+        font-weight: bolder;
+
+    }
+
+    .twopara .para1 .line2 {
+        font-size: 30px;
+        font-size: 40px;
+        /* text-align: justify; */
+        color: gray;
+
+    }
+
+    .twopara .para1 .line2 span {
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: justify;
+    }
+
+    .twopara .para1 .line3 {
+        text-align: justify;
+        font-size: 1.2rem;
+        color: #ffffff;
+        line-height: 1.8;
+        font-style: italic;
+        border-left: 4px solid #00bcd4;
+        padding-left: 1rem;
+    }
+    .para2 .allone{
+        text-align: justify;
+        font-size: 25px;
+        color:rgb(164, 163, 163);
+    }
+
+    @media (min-width: 600px) {
+        .twopara {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .para1 {
+            text-align: justify;
+
+        }
+
+        .twopara>.para1>.one {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .twopara .para1 .one .myname {
+            font-size: 50px;
+            color: #ffc107;
+            font-weight: bolder;
+        }
+
+        .twopara .para1 .line2 {
+            font-size: 30px;
+            font-size: 40px;
+            text-align: justify;
+            color: gray;
+        }
+
+        .twopara .para1 .line2 span {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .twopara .para1 .line3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            line-height: 1.8;
+            font-style: italic;
+            border-left: 4px solid #f2fa5b;
+            padding-left: 1rem;
+        }
+
+        .twopara .para2 .allone {
+            word-spacing: 15px;
+            font-size: 40px;
+        }
+    }
+    .lastbutton{
+        justify-content: center;
+        display: flex;
+
+    }
+    .lastbutton a button{
+        color:#ffc107;
+        background: black;
+        font-size: 35px;
+        height: 60px;
+        border: 1px solid #ffc107  ;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .lastbutton a button:hover{
+        background: #ffc107;
+        color: black;
+        transition:3ms;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div>
+            <h1 class="name">Swapnil.</h1>
+        </div>
+        <div class="header-option">
+            <a class="headernames" href="index.html">Home</a>
+            <a class="headernames" href="about.html">About</a>
+            <a class="headernames" href="project.html">Project</a>
+        </div>
+        <div class="hireme">
+            <a href="contect.html"><button>Here ME!</button></a>
+        </div>
+    </header>
+
+    <div class="middle">
+        <div class="iam"><br><br><br>
+            <label>Hello,I'm</label><br>
+        </div>
+
+
+        <div class="mybig-name"><br><br>
+            <img src="myimage.png" class="myimage" alt=""><br><Br>
+            <label>SWAPNIL</label><br><br>
+            <label>DEVKAR</label>
+        </div>
+    </div><br><br><br>
+
+    <div class="aboutme">
+        <label class="h1">Know Me More</label><br><br>
+        <lable class="h2">ABOUT ME</lable><br><br>
+    </div><br><br><br><br><br>
+
+    <div class="twopara">
+        <div class="para1" style="color: white;">
+            <p class="one">Hi, I'm <span class="myname">Swapnil Devkar.</span> — A Full</p>
+            <p class="line2"><span class="one"> Stack Developer👨‍💻</span> blending technical </p>
+            <p class="line2">with creative innovation to build </p>
+            <p class="line2">impactful digital solutions.</p> <br><br>
+            <p class="line3">"Every deadline met, every budget respected, </p>
+            <p class="line3">every client empowered that's not just work,</p>
+            <p class="line3">that's my signature."</p><br>
+        </div>
+        <div class="para2" style="color: white;">
+            <p class="allone">"We help you build a strong </p>
+            <p class="allone">brand for your business at </p>
+            <p class="allone">an affordable price. Trusted </p>
+            <p class="allone">by thousands, our dedicated </p>
+            <p class="allone">team delivers outstanding results</p>
+            <p class="allone"> that drive growth and impact."</p>
+        </div>
+    </div><br><br>
+
+    <div class="lastbutton">
+        <a href="about.html">
+            <button>More About Me</button>
+        </a><br><br><br>
+
+    </div><br><br>.
+
+
+</body>
+
+</html>

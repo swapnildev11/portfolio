@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+
+        box-sizing: border-box;
+        background: black;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        margin-top: 0px;
+        padding: 0px;
+        background: black;
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+    }
+
+    .name {
+        font-size: 200%;
+        color: white;
+        margin-top: 25px;
+    }
+
+    .header-option {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .header-option>a:hover {
+        color: #9b9684;
+
+    }
+
+    .header-option>.headernames {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        transition: 1s;
+        font-weight: 700;
+        justify-content: space-evenly;
+    }
+
+    .header-option>.headernames:hover {
+        border: 2px solid white;
+        border-radius: 10px;
+        transition: 1s;
+        color: #ffc107;
+        padding: 5px;
+    }
+
+    .hireme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hireme>a>button {
+        background: none;
+        color: white;
+        border: 1px white solid;
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .hireme>a>button:hover {
+        background: white;
+        color: black;
+        font-size: 15px;
+        
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .main .touch {
+        display: block;
+        color: #ffc107;
+        font-size: 25px;
+    }
+
+    .heading {
+        color: white;
+        font-size: 40px;
+        font-weight: 400;
+        font-weight: bolder;
+    }
+
+    .twomain {
+        display: flex;
+        justify-content:space-around;
+    }
+    .section1{
+        width: 40%;
+
+    }
+
+    .imageicon>img {
+        border-radius: 50%;
+        display: inline;
+    }
+    .para1 {
+        color: #ffc107;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    .para2 {
+        color: #ffc107;
+        font-size: 40px;
+        text-align: justify;
+    }
+
+    .para3 {
+        /* color: #9b9684;
+        font-size: 40px;
+        text-align: justify;
+        word-wrap: break-word;
+        word-break: break-all; */
+            word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  line-height: 1.5;
+  color:#9b9684;
+    }
+
+    .imageicon {
+        display: flex;
+    }
+
+    .section2 .head1 {
+        color: white;
+        font-size: 40px;
+    }
+
+    label {
+        color: #9b9684;
+    }
+    .lap{
+        color: white;
+        font-weight: 700;
+        font-size: 25px;
+        font-family: sans-serif;
+    }
+    .addcall{
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid rgb(71, 70, 70);
+        background: transparent;
+        color: white;
+        outline: none;
+        padding: 5px 0;
+        width: 330px;
+    }
+
+    input:hover {
+        border-bottom: 2px solid rgb(240, 237, 237);
+    }
+    textarea {
+        border: none;
+        border-bottom: 2px solid rgb(71, 70, 70);
+        background: transparent;
+        color: white;
+        outline: none;
+        padding: 5px 0;
+        width: 330px;
+        height: 90px;
+    }
+    textarea:hover{
+         border-bottom: 2px solid rgb(240, 237, 237);
+    }
+    .lastbutton{
+         display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+    }
+     .lastbutton a button {
+        color: black;
+        font-size: 25px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        background: #ffc107;
+    }
+
+    .lastbutton a button:hover {
+        background: #8f7529;
+        transition: 1s;
+    }
+   @media (max-width :450px) {
+    .twomain{
+        display: block;
+        justify-content: center;
+        margin-left: 40px;
+        width: 300px;
+    }
+    .para2{
+        width: 300px;
+    }
+    .para3{
+        width: 300px;
+    }
+   }
+   .last{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+   }
+   .last a{
+color: #9b9684;
+font-size: 30px;
+text-decoration: none;
+font-weight: 700;
+   }
+   .line{
+    width: 0px;
+    height: 40px;
+    border-color: #ffc107;
+   }
+   @media ( max-width:450px) {
+    .last a{
+        font-size: 15px;
+        
+    }
+    .line{
+        height: 20px;
+    }
+    
+   }
+   .last .Instagram{
+    cursor: url("instagram\ copy.png"), auto;
+   }
+   .last .link{
+    cursor: url("linkedin.png"), auto;
+   }
+   .last .git{
+    cursor: url("social\ copy.png"), auto;
+   }
+</style>
+
+<body>
+    <header>
+        <div>
+            <h1 class="name">Swapnil.</h1>
+        </div>
+        <div class="header-option">
+            <a class="headernames" href="index.html">Home</a>
+            <a class="headernames" href="about.html">About</a>
+            <a class="headernames" href="project.html">Project</a>
+        </div>
+        <div class="hireme">
+            <a href="contect.html"><button>Here ME!</button></a>
+        </div>
+    </header><br><br><br><br><br><br><br>
+
+     <div class="main">
+        <label class="touch">Get in Touch</label><br>
+        <lable class="heading">CONTACT</lable><br><br>
+    </div><br><br><br>
+
+    <div class="twomain">
+
+        <div class="section1">
+            <div class="imageicon">
+                <img width="80" height="50" src="myimage.png">
+                <p class="para1"></p>
+            </div>
+            <p class="para2"> I enjoy discussing new projects challenges.<span class="para3">Please share   as much info, as possible so i can 
+            get the most out of our first catch-up.</span> 
+          </p><br>
+            <div class="living">
+                <label class="lap">Living In:</label><br><br>
+                <p class="addcall">Ammeerpet,Hyderabad - 500016,Telangana, India</p><br><br>
+            </div>
+            <div class="call">
+                <lable class="lap">Call:</lable><br><br>
+                <p class="addcall">9356757706</p><br><br>
+            </div>
+        </div>
+
+        <div class="section2">
+            <p class="head1">Send me a note</p><br><br><br>
+            <div class="my-name">
+                <label>Your Name:</label><br><br>
+                <input type="text">
+            </div><br>
+            <div class="my-email">
+                <label>Your Email:</label><br><br>
+                <input type="email">
+            </div><br><br>
+
+            <div class="my-dec">
+                <label>Describe what you need:</label><br>
+                <textarea></textarea>
+            </div><br><br><br>
+            <div class="lastbutton">
+            <a href="#">
+                <button>Send Message</button>
+            </a><br><br><br>
+
+        </div>
+
+        </div>
+    </div>
+    <footer>
+        <br><br>
+        <div class="last">
+            <a href="#" class="Instagram">Instagram</a><hr class="line">
+            <a href="#" class="link">LinkedIn</a><hr class="line">
+            <a href="#" class="git">GitHub</a>
+        </div><br><br>
+        
+    </footer>
+
+
+</body>
+
+</html>
